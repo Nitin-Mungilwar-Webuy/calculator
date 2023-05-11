@@ -1,0 +1,33 @@
+
+body{
+    margin: 10px 200px;
+    background-color: #b8b5fb;
+}
+.display{
+    width: 30px;
+    height: 30px;
+}
+.container{
+    width: 300px;
+    height: 400px;
+    background-color:whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-gap: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    
+   
+}
+.number{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
