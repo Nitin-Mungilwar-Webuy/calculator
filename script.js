@@ -14,7 +14,16 @@ elements.forEach((element)=>{
       console.log(string);
       document.querySelector('.row1').value=string;
 
-    }else{
+    }else if(e.target.dataset.value=="ClearOneChar"){
+      string=string.slice(0,-1);
+      outputResult.value=string;
+
+    }else if(e.target.dataset.value=="ClearAll"){
+      string="";
+      outputResult.value=string;
+
+    }
+    else{
       
       string=string+e.target.dataset.value;
       outputResult.value=string;
