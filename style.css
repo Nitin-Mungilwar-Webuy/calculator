@@ -20,6 +20,9 @@ body{
 input{
     width:236px;
 }
+.display{
+    background-color: #ff6c2d;
+}
 button{
     width: 30px;
     height: 30px;
