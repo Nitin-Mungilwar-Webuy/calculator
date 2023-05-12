@@ -15,7 +15,7 @@ elements.forEach((element)=>{
       document.querySelector('.row1').value=string;
 
     }else if(e.target.dataset.value=="ClearOneChar"){
-      string=string.slice(0,-1);
+      string=string.toString().slice(0,-1);
       outputResult.value=string;
 
     }else if(e.target.dataset.value=="ClearAll"){
