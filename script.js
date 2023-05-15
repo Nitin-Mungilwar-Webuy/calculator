@@ -1,12 +1,12 @@
 let string='';
-const numbers=document.querySelectorAll('.number');
-const operators=document.querySelectorAll('.operator');
-const clearButton = document.querySelector('.clear');
-const outputResult=document.querySelector('input');
-const elements=[...numbers,...operators];
+const numbersKeys=document.querySelectorAll('.numbersKeys');
+const operatorsKeys=document.querySelectorAll('.operatorsKeys');
+const clearButtonKey = document.querySelector('.clear');
+let outputResult=document.querySelector('input');
+const elementsArray=[...numbersKeys,...operatorsKeys];
 
 
-elements.forEach((element)=>{
+elementsArray.forEach((element)=>{
   element.addEventListener('click',(e)=>{
     
     switch (e.target.dataset.value) {
@@ -25,6 +25,11 @@ elements.forEach((element)=>{
         string="";
         outputResult.value=string;
         break;
+        case "percentage":
+          string=eval(string)/100;
+          outputResult.value=string;
+          break;
+      
 
       default:
         string=string+e.target.dataset.value;
