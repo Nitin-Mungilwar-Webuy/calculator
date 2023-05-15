@@ -12,7 +12,7 @@ elementsArray.forEach((element)=>{
     switch (e.target.dataset.value) {
       case "=":
         string=eval(string);
-        console.log(string);
+       
         outputResult.value=string;
         break;
 
