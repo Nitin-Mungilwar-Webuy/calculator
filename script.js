@@ -8,7 +8,7 @@ elementsArray.forEach((element) => {
   element.addEventListener("click", (e) => {
     switch (e.target.dataset.value) {
       case "=":
-        string = eval(string);
+        string = eval(string); //test
         outputResult.value = string;
         break;
       case "ClearOneChar":
