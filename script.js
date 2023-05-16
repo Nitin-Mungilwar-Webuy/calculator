@@ -8,26 +8,21 @@ elementsArray.forEach((element) => {
   element.addEventListener("click", (e) => {
     switch (e.target.dataset.value) {
       case "=":
-        string = eval(string); //test 123456
-        outputResult.value = string;
+        string = eval(string);
         break;
       case "ClearOneChar":
         string = string.toString().slice(0, -1);
-        outputResult.value = string;
         break;
       case "ClearAll":
         string = "";
-        outputResult.value = string;
         break;
       case "percentage":
         string = eval(string) / 100;
-        outputResult.value = string;
         break;
-
       default:
         string = string + e.target.dataset.value;
-        outputResult.value = string;
         break;
     }
+    outputResult.value = string;
   });
 });
